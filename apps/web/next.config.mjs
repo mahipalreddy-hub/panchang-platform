@@ -6,7 +6,10 @@ const nextConfig = {
     '@panchang/astro-core',
     '@panchang/api-client',
     '@panchang/ui'
-  ]
+  ],
+  // Ensure Next.js does not hoist styled-jsx from a nested node_modules
+  // by pointing it to the workspace root dist output
+  distDir: '.next'
 };
 
 export default nextConfig;
