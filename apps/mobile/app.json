@@ -1,0 +1,48 @@
+{
+    "expo": {
+        "name": "Vedic Panchang",
+        "slug": "vedic-panchang-app",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "userInterfaceStyle": "dark",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#080C14"
+        },
+        "scheme": "panchang",
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.vedicpanchang.app",
+            "infoPlist": {
+                "NSLocationWhenInUseUsageDescription": "Allow Vedic Panchang to detect your city to compute accurate local Sunrise, Sunset, and Rahu Kalam timings."
+            }
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/adaptive-icon.png",
+                "backgroundColor": "#080C14"
+            },
+            "package": "com.vedicpanchang.app",
+            "permissions": [
+                "ACCESS_COARSE_LOCATION",
+                "ACCESS_FINE_LOCATION",
+                "RECEIVE_BOOT_COMPLETED",
+                "VIBRATE"
+            ]
+        },
+        "plugins": [
+            [
+                "expo-notifications",
+                {
+                    "icon": "./assets/notification-icon.png",
+                    "color": "#D97706",
+                    "sounds": [
+                        "./assets/temple-bell.wav"
+                    ]
+                }
+            ]
+        ]
+    }
+}

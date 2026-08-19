@@ -1,0 +1,3 @@
+export const MANDALA_BG_PATTERN = `radial-gradient(circle at 50% 50%, rgba(217, 119, 6, 0.08) 0%, rgba(15, 23, 42, 0) 70%)`;
+
+export const OM_SYMBOL_SVG = `<svg viewBox="0 0 100 100" fill="currentColor" className="w-8 h-8 opacity-80"><path d="M50 15c-3 0-6 1-8 3-2-2-5-3-8-3-8 0-14 6-14 14 0 5 3 10 7 12-4 3-7 8-7 14 0 10 8 18 18 18 6 0 11-3 14-7 3 4 8 7 14 7 10 0 18-8 18-18 0-6-3-11-7-14 4-2 7-7 7-12 0-8-6-14-14-14-3 0-6 1-8 3-2-2-5-3-8-3z"/></svg>`;
