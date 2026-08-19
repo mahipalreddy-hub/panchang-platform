@@ -7,9 +7,16 @@ const __dirname = path.dirname(__filename);
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: ['@panchang/types', '@panchang/astro-core', '@panchang/api-client', '@panchang/ui'],
+  transpilePackages: [
+    '@panchang/types',
+    '@panchang/astro-core',
+    '@panchang/api-client',
+    '@panchang/ui'
+  ],
+  experimental: {
+    outputFileTracingRoot: path.join(__dirname, '../../')
+  },
   webpack: (config) => {
-    // Force Next.js to use the exact same React package to prevent duplicate React instances in monorepo
     config.resolve.alias = {
       ...config.resolve.alias,
       react: path.resolve(__dirname, '../../node_modules/react'),
